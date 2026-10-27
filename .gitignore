@@ -1,0 +1,13 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# TensorBoard logs (large)
+*.tfevents.*
+
+# Datasets (downloaded automatically by torchvision)
+data/

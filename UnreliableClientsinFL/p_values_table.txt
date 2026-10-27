@@ -1,0 +1,267 @@
+Per-user power P_i = ||w_i||^2 / d, for every run/variant.
+Confirms: P_interference (sum over malicious) = N_malicious * mean(malicious P_i).
+====================================================================================================
+
+001_8  |  2-malicious  |  noise_std = 0.01
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=6):
+    user  0: P = 0.000459
+    user  1: P = 0.000463
+    user  2: P = 0.000475
+    user  3: P = 0.000469
+    user  6: P = 0.000482
+    user  7: P = 0.000467
+    mean(reliable P)      = 0.000469
+    N_reliable * mean      = 0.002815
+  Malicious users (N=2):
+    user  4: P = 0.000910
+    user  5: P = 0.000902
+    mean(malicious P)      = 0.000906
+    N_malicious * mean      = 0.001812
+    sum(malicious P)        = 0.001812   <- P_interference (matches N*mean)
+
+001_8  |  1-malicious  |  noise_std = 0.01
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=7):
+    user  0: P = 0.000905
+    user  1: P = 0.000936
+    user  2: P = 0.000914
+    user  3: P = 0.000904
+    user  4: P = 0.000915
+    user  5: P = 0.000908
+    user  7: P = 0.000919
+    mean(reliable P)      = 0.000914
+    N_reliable * mean      = 0.006401
+  Malicious users (N=1):
+    user  6: P = 0.001891
+    mean(malicious P)      = 0.001891
+    N_malicious * mean      = 0.001891
+    sum(malicious P)        = 0.001891   <- P_interference (matches N*mean)
+
+003_8  |  2-malicious  |  noise_std = 0.03
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=6):
+    user  0: P = 0.001435
+    user  1: P = 0.001378
+    user  2: P = 0.001393
+    user  3: P = 0.001394
+    user  6: P = 0.001400
+    user  7: P = 0.001369
+    mean(reliable P)      = 0.001395
+    N_reliable * mean      = 0.008368
+  Malicious users (N=2):
+    user  4: P = 0.001967
+    user  5: P = 0.001943
+    mean(malicious P)      = 0.001955
+    N_malicious * mean      = 0.003910
+    sum(malicious P)        = 0.003910   <- P_interference (matches N*mean)
+
+003_8  |  1-malicious  |  noise_std = 0.03
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=7):
+    user  0: P = 0.001881
+    user  1: P = 0.001860
+    user  2: P = 0.001866
+    user  3: P = 0.001844
+    user  4: P = 0.001870
+    user  5: P = 0.001861
+    user  7: P = 0.001866
+    mean(reliable P)      = 0.001864
+    N_reliable * mean      = 0.013048
+  Malicious users (N=1):
+    user  6: P = 0.003027
+    mean(malicious P)      = 0.003027
+    N_malicious * mean      = 0.003027
+    sum(malicious P)        = 0.003027   <- P_interference (matches N*mean)
+
+005_8  |  2-malicious  |  noise_std = 0.05
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=6):
+    user  0: P = 0.003212
+    user  1: P = 0.003206
+    user  2: P = 0.003193
+    user  3: P = 0.003199
+    user  6: P = 0.003219
+    user  7: P = 0.003249
+    mean(reliable P)      = 0.003213
+    N_reliable * mean      = 0.019279
+  Malicious users (N=2):
+    user  4: P = 0.004080
+    user  5: P = 0.004162
+    mean(malicious P)      = 0.004121
+    N_malicious * mean      = 0.008243
+    sum(malicious P)        = 0.008243   <- P_interference (matches N*mean)
+
+005_8  |  1-malicious  |  noise_std = 0.05
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=7):
+    user  0: P = 0.003802
+    user  1: P = 0.003813
+    user  2: P = 0.003780
+    user  3: P = 0.003748
+    user  4: P = 0.003886
+    user  5: P = 0.003743
+    user  7: P = 0.003709
+    mean(reliable P)      = 0.003783
+    N_reliable * mean      = 0.026482
+  Malicious users (N=1):
+    user  6: P = 0.005255
+    mean(malicious P)      = 0.005255
+    N_malicious * mean      = 0.005255
+    sum(malicious P)        = 0.005255   <- P_interference (matches N*mean)
+
+001_16  |  2-malicious  |  noise_std = 0.01
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=14):
+    user  0: P = 0.000903
+    user  1: P = 0.000888
+    user  2: P = 0.000877
+    user  3: P = 0.000878
+    user  6: P = 0.000911
+    user  7: P = 0.000886
+    user  8: P = 0.000880
+    user  9: P = 0.000904
+    user 10: P = 0.000906
+    user 11: P = 0.000884
+    user 12: P = 0.000903
+    user 13: P = 0.000880
+    user 14: P = 0.000903
+    user 15: P = 0.000906
+    mean(reliable P)      = 0.000893
+    N_reliable * mean      = 0.012509
+  Malicious users (N=2):
+    user  4: P = 0.001897
+    user  5: P = 0.001884
+    mean(malicious P)      = 0.001890
+    N_malicious * mean      = 0.003781
+    sum(malicious P)        = 0.003781   <- P_interference (matches N*mean)
+
+001_16  |  1-malicious  |  noise_std = 0.01
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=15):
+    user  0: P = 0.001363
+    user  1: P = 0.001363
+    user  2: P = 0.001337
+    user  3: P = 0.001371
+    user  4: P = 0.001374
+    user  5: P = 0.001372
+    user  7: P = 0.001376
+    user  8: P = 0.001366
+    user  9: P = 0.001359
+    user 10: P = 0.001366
+    user 11: P = 0.001366
+    user 12: P = 0.001373
+    user 13: P = 0.001357
+    user 14: P = 0.001347
+    user 15: P = 0.001363
+    mean(reliable P)      = 0.001364
+    N_reliable * mean      = 0.020453
+  Malicious users (N=1):
+    user  6: P = 0.002939
+    mean(malicious P)      = 0.002939
+    N_malicious * mean      = 0.002939
+    sum(malicious P)        = 0.002939   <- P_interference (matches N*mean)
+
+003_16  |  2-malicious  |  noise_std = 0.03
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=14):
+    user  0: P = 0.001810
+    user  1: P = 0.001770
+    user  2: P = 0.001814
+    user  3: P = 0.001787
+    user  6: P = 0.001781
+    user  7: P = 0.001811
+    user  8: P = 0.001760
+    user  9: P = 0.001788
+    user 10: P = 0.001799
+    user 11: P = 0.001791
+    user 12: P = 0.001813
+    user 13: P = 0.001836
+    user 14: P = 0.001805
+    user 15: P = 0.001777
+    mean(reliable P)      = 0.001796
+    N_reliable * mean      = 0.025141
+  Malicious users (N=2):
+    user  4: P = 0.002861
+    user  5: P = 0.002877
+    mean(malicious P)      = 0.002869
+    N_malicious * mean      = 0.005739
+    sum(malicious P)        = 0.005739   <- P_interference (matches N*mean)
+
+003_16  |  1-malicious  |  noise_std = 0.03
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=15):
+    user  0: P = 0.002252
+    user  1: P = 0.002250
+    user  2: P = 0.002241
+    user  3: P = 0.002239
+    user  4: P = 0.002256
+    user  5: P = 0.002263
+    user  7: P = 0.002277
+    user  8: P = 0.002253
+    user  9: P = 0.002226
+    user 10: P = 0.002230
+    user 11: P = 0.002256
+    user 12: P = 0.002228
+    user 13: P = 0.002250
+    user 14: P = 0.002266
+    user 15: P = 0.002243
+    mean(reliable P)      = 0.002249
+    N_reliable * mean      = 0.033731
+  Malicious users (N=1):
+    user  6: P = 0.003879
+    mean(malicious P)      = 0.003879
+    N_malicious * mean      = 0.003879
+    sum(malicious P)        = 0.003879   <- P_interference (matches N*mean)
+
+005_16  |  2-malicious  |  noise_std = 0.05
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=14):
+    user  0: P = 0.003495
+    user  1: P = 0.003542
+    user  2: P = 0.003541
+    user  3: P = 0.003499
+    user  6: P = 0.003553
+    user  7: P = 0.003543
+    user  8: P = 0.003475
+    user  9: P = 0.003488
+    user 10: P = 0.003548
+    user 11: P = 0.003518
+    user 12: P = 0.003499
+    user 13: P = 0.003485
+    user 14: P = 0.003511
+    user 15: P = 0.003533
+    mean(reliable P)      = 0.003516
+    N_reliable * mean      = 0.049230
+  Malicious users (N=2):
+    user  4: P = 0.004805
+    user  5: P = 0.004855
+    mean(malicious P)      = 0.004830
+    N_malicious * mean      = 0.009661
+    sum(malicious P)        = 0.009661   <- P_interference (matches N*mean)
+
+005_16  |  1-malicious  |  noise_std = 0.05
+----------------------------------------------------------------------------------------------------
+  Reliable users (N=15):
+    user  0: P = 0.004063
+    user  1: P = 0.003987
+    user  2: P = 0.004036
+    user  3: P = 0.004090
+    user  4: P = 0.003951
+    user  5: P = 0.004025
+    user  7: P = 0.004000
+    user  8: P = 0.004032
+    user  9: P = 0.004079
+    user 10: P = 0.004079
+    user 11: P = 0.004007
+    user 12: P = 0.003984
+    user 13: P = 0.004032
+    user 14: P = 0.004026
+    user 15: P = 0.004036
+    mean(reliable P)      = 0.004029
+    N_reliable * mean      = 0.060428
+  Malicious users (N=1):
+    user  6: P = 0.005967
+    mean(malicious P)      = 0.005967
+    N_malicious * mean      = 0.005967
+    sum(malicious P)        = 0.005967   <- P_interference (matches N*mean)
